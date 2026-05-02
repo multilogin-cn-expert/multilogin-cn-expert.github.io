@@ -1,0 +1,80 @@
+# Jekyll Configuration for GitHub Pages
+# This file optimizes the GitHub Pages build and SEO
+
+# Site settings
+title: "Multilogin CN Expert"
+email: "support@multilogin-cn-expert.com"
+description: "Multilogin 防关联指纹浏览器中文专业指南 | 跨境电商必备工具"
+baseurl: "" # GitHub Pages with custom domain
+url: "https://multilogin-cn-expert.github.io"
+lang: "zh-Hans"
+
+# Build settings
+encoding: UTF-8
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - SEO-OPTIMIZATION.md
+  - LAUNCH-CHECKLIST.md
+
+# Include files
+include:
+  - .htaccess
+  - robots.txt
+  - sitemap.xml
+
+# Sass settings
+sass:
+  style: compressed # Minify CSS
+  cache: false
+
+# Markdown settings
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Collections
+collections_dir: .
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Permalinks
+permalink: /:path/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "zh-Hans"
+
+# Timezone
+timezone: Asia/Shanghai
+
+# Future posts
+future: false
+
+# Limit posts on index
+paginate: 10
+paginate_path: /page:num/
+
+# SEO Plugin settings
+# jekyll-seo-tag will automatically generate meta tags
+
+# Feed
+feed:
+  posts_limit: 10
+  categories_limit: 10
+  tags_limit: 10

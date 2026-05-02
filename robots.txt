@@ -1,12 +1,41 @@
+# Multilogin CN Expert - robots.txt
+# SEO-optimized robots configuration
+
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /review/
+Allow: /setup/
+Allow: /offers/
+Allow: /disclosure/
+Allow: /privacy/
+
 Disallow: /admin/
 Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /temp/
+Disallow: /cache/
 
-Sitemap: https://multilogin-cn-expert.github.io/sitemap.xml
+# Search Engine Crawl Settings
+Crawl-delay: 0.5
+Request-rate: 10/1s
 
-# 爬虫延迟（毫秒）
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
 Crawl-delay: 1
 
-# 访问速率
-Request-rate: 1/1s
+# Block bad bots
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://multilogin-cn-expert.github.io/sitemap.xml

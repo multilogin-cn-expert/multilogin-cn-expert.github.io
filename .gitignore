@@ -1,0 +1,80 @@
+# .gitignore
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Build & dependencies
+/node_modules
+/vendor
+.bundle/
+Gemfile.lock
+
+# Jekyll build output
+/_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Package manager lock files
+yarn.lock
+package-lock.json
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Logs
+*.log
+
+# System files
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# IDEs
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+/coverage
+.nyc_output
+
+# Development
+.env.development
+.env.test
+
+# Build artifacts
+dist/
+build/
+*.min.js
+*.min.css
+
+# Cache
+.cache/
+.parcel-cache
+
+# Local environment
+.env.local
+.env.*.local
+
+# Temporary directories
+tmp/
+temp/
